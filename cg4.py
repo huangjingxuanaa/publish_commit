@@ -27,7 +27,7 @@ if __name__ == '__main__':
            newfile.write(oldfilelines[l])
        oldfile.close()
        newfile.close()
-       os.system('timedatectl set-time '+system_time)
+       os.system('timedatectl set-time "'+system_time+'"')
        os.system('git pull')
        os.system('git add .')
        os.system('git commit -a -m '+comment)

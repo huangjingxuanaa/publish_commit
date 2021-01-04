@@ -469,3 +469,28 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
                 RegExp.$1.length == 1 ? o[k] :
+                RegExp.$1.length == 1 ? o[k] :
+        "S": this.getMilliseconds() //millisecond 
+    return format;
+Date.prototype.format = function(format) {
+let fs = require('fs');
+    for (var k in o)
+fs.appendFileSync('records.txt', `${time}\n\n`);
+                ("00" + o[k]).substr(("" + o[k]).length));
+        if (new RegExp("(" + k + ")").test(format))
+            format = format.replace(RegExp.$1,
+        "S": this.getMilliseconds() //millisecond 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+    return format;
+            format = format.replace(RegExp.$1,
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    }
+fs.appendFileSync('records.txt', `${time}\n\n`);
+        "h+": this.getHours(), //hour 
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "M+": this.getMonth() + 1, //month 
+                ("00" + o[k]).substr(("" + o[k]).length));
+        "S": this.getMilliseconds() //millisecond 
+Date.prototype.format = function(format) {
+let fs = require('fs');
+    var o = {
