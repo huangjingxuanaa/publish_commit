@@ -497,3 +497,9 @@ let fs = require('fs');
 
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
     return format;
+        "s+": this.getSeconds(), //second 
+    var o = {
+            format = format.replace(RegExp.$1,
+    for (var k in o)
+fs.appendFileSync('records.txt', `${time}\n\n`);
+        "h+": this.getHours(), //hour 
