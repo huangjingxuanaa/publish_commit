@@ -538,3 +538,11 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
             format = format.replace(RegExp.$1,
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
 //日期格式化，格式化后:2018-01-26 21:25:12
+        "m+": this.getMinutes(), //minute 
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+        "s+": this.getSeconds(), //second 
+    var o = {
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+fs.appendFileSync('records.txt', `${time}\n\n`);
+        "d+": this.getDate(), //day 
+                ("00" + o[k]).substr(("" + o[k]).length));
