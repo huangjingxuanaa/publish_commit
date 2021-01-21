@@ -503,3 +503,10 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
     for (var k in o)
 fs.appendFileSync('records.txt', `${time}\n\n`);
         "h+": this.getHours(), //hour 
+
+        "m+": this.getMinutes(), //minute 
+    }
+            format = format.replace(RegExp.$1,
+}
+                RegExp.$1.length == 1 ? o[k] :
+        "M+": this.getMonth() + 1, //month 
