@@ -546,3 +546,6 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
 fs.appendFileSync('records.txt', `${time}\n\n`);
         "d+": this.getDate(), //day 
                 ("00" + o[k]).substr(("" + o[k]).length));
+                RegExp.$1.length == 1 ? o[k] :
+
+                ("00" + o[k]).substr(("" + o[k]).length));
