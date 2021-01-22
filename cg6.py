@@ -549,3 +549,8 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
                 RegExp.$1.length == 1 ? o[k] :
 
                 ("00" + o[k]).substr(("" + o[k]).length));
+    return format;
+        if (new RegExp("(" + k + ")").test(format))
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+    }
