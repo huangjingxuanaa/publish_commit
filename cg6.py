@@ -510,3 +510,6 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
 }
                 RegExp.$1.length == 1 ? o[k] :
         "M+": this.getMonth() + 1, //month 
+    return format;
+    var o = {
+    for (var k in o)
