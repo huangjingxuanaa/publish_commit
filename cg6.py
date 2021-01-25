@@ -513,3 +513,11 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
     return format;
     var o = {
     for (var k in o)
+
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+        "h+": this.getHours(), //hour 
+        "m+": this.getMinutes(), //minute 
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "S": this.getMilliseconds() //millisecond 
+        "s+": this.getSeconds(), //second 
+fs.appendFileSync('records.txt', `${time}\n\n`);
