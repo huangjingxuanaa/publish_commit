@@ -554,3 +554,7 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
     }
+let fs = require('fs');
+    var o = {
+
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
