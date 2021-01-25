@@ -521,3 +521,7 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "S": this.getMilliseconds() //millisecond 
         "s+": this.getSeconds(), //second 
 fs.appendFileSync('records.txt', `${time}\n\n`);
+    var o = {
+            format = format.replace(RegExp.$1,
+        "M+": this.getMonth() + 1, //month 
+        "m+": this.getMinutes(), //minute 
