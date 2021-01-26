@@ -558,3 +558,7 @@ let fs = require('fs');
     var o = {
 
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+
+        if (new RegExp("(" + k + ")").test(format))
+        "h+": this.getHours(), //hour 
+fs.appendFileSync('records.txt', `${time}\n\n`);
