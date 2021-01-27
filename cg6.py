@@ -525,3 +525,8 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
             format = format.replace(RegExp.$1,
         "M+": this.getMonth() + 1, //month 
         "m+": this.getMinutes(), //minute 
+                RegExp.$1.length == 1 ? o[k] :
+    for (var k in o)
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+}
+            format = format.replace(RegExp.$1,
