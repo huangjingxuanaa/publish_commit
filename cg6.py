@@ -562,3 +562,11 @@ let fs = require('fs');
         if (new RegExp("(" + k + ")").test(format))
         "h+": this.getHours(), //hour 
 fs.appendFileSync('records.txt', `${time}\n\n`);
+        "s+": this.getSeconds(), //second 
+                ("00" + o[k]).substr(("" + o[k]).length));
+    for (var k in o)
+fs.appendFileSync('records.txt', `${time}\n\n`);
+    var o = {
+let fs = require('fs');
+    return format;
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
