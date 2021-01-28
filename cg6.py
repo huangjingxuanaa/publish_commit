@@ -530,3 +530,6 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
 }
             format = format.replace(RegExp.$1,
+
+Date.prototype.format = function(format) {
+fs.appendFileSync('records.txt', `${time}\n\n`);
