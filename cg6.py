@@ -570,3 +570,7 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
 let fs = require('fs');
     return format;
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+        "s+": this.getSeconds(), //second 
+fs.appendFileSync('records.txt', `${time}\n\n`);
+    for (var k in o)
+        "d+": this.getDate(), //day 
