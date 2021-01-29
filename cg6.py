@@ -574,3 +574,9 @@ let fs = require('fs');
 fs.appendFileSync('records.txt', `${time}\n\n`);
     for (var k in o)
         "d+": this.getDate(), //day 
+    }
+                ("00" + o[k]).substr(("" + o[k]).length));
+        "d+": this.getDate(), //day 
+//日期格式化，格式化后:2018-01-26 21:25:12
+        "m+": this.getMinutes(), //minute 
+        "S": this.getMilliseconds() //millisecond 
