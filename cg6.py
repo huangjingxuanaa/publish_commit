@@ -533,3 +533,8 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
 
 Date.prototype.format = function(format) {
 fs.appendFileSync('records.txt', `${time}\n\n`);
+        "s+": this.getSeconds(), //second 
+        "M+": this.getMonth() + 1, //month 
+            format = format.replace(RegExp.$1,
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+//日期格式化，格式化后:2018-01-26 21:25:12
