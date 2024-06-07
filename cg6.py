@@ -257,3 +257,4 @@ let fs = require('fs');
 Date.prototype.format = function(format) {
     return format;
         "s+": this.getSeconds(), //second 
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
