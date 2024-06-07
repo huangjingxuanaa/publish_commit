@@ -420,3 +420,8 @@ Date.prototype.format = function(format) {
     for (var k in o)
                 RegExp.$1.length == 1 ? o[k] :
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+
+        "d+": this.getDate(), //day 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+        "h+": this.getHours(), //hour 
+            format = format.replace(RegExp.$1,
