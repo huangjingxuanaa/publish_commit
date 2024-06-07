@@ -236,3 +236,8 @@ Date.prototype.format = function(format) {
         if (new RegExp("(" + k + ")").test(format))
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+Date.prototype.format = function(format) {
+let fs = require('fs');
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "d+": this.getDate(), //day 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
