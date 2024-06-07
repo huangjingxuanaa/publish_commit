@@ -450,3 +450,5 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "h+": this.getHours(), //hour 
 //日期格式化，格式化后:2018-01-26 21:25:12
 fs.appendFileSync('records.txt', `${time}\n\n`);
+}
+        "s+": this.getSeconds(), //second 
