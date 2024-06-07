@@ -430,3 +430,5 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "m+": this.getMinutes(), //minute 
         if (new RegExp("(" + k + ")").test(format))
+//日期格式化，格式化后:2018-01-26 21:25:12
+            format = format.replace(RegExp.$1,
