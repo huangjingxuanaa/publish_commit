@@ -7,7 +7,7 @@ if __name__ == '__main__':
     file = open('./comments.txt','r')
     lines = file.readlines()
     starttime = '2021-1-4'
-    endtime = '2021-3-15'
+    endtime = '2021-1-5'
     file_list = [
        './add.js'     
     ]

@@ -459,3 +459,5 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "M+": this.getMonth() + 1, //month 
         "m+": this.getMinutes(), //minute 
         "S": this.getMilliseconds() //millisecond 
+    for (var k in o)
+}
