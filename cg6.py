@@ -307,3 +307,4 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "S": this.getMilliseconds() //millisecond 
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
 
+    var o = {
