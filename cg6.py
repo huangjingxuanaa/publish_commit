@@ -371,3 +371,6 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "d+": this.getDate(), //day 
         "s+": this.getSeconds(), //second 
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                RegExp.$1.length == 1 ? o[k] :
+    }
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
