@@ -241,3 +241,10 @@ let fs = require('fs');
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
         "d+": this.getDate(), //day 
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+        "M+": this.getMonth() + 1, //month 
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+//日期格式化，格式化后:2018-01-26 21:25:12
+        if (new RegExp("(" + k + ")").test(format))
+Date.prototype.format = function(format) {
+fs.appendFileSync('records.txt', `${time}\n\n`);
+let fs = require('fs');
