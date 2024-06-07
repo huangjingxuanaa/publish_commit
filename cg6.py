@@ -383,3 +383,5 @@ let fs = require('fs');
 //日期格式化，格式化后:2018-01-26 21:25:12
         "d+": this.getDate(), //day 
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+Date.prototype.format = function(format) {
+
