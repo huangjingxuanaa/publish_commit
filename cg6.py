@@ -248,3 +248,7 @@ let fs = require('fs');
 Date.prototype.format = function(format) {
 fs.appendFileSync('records.txt', `${time}\n\n`);
 let fs = require('fs');
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+    for (var k in o)
+}
+                ("00" + o[k]).substr(("" + o[k]).length));
