@@ -280,3 +280,8 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
             format = format.replace(RegExp.$1,
 
         "h+": this.getHours(), //hour 
+        if (new RegExp("(" + k + ")").test(format))
+}
+        "S": this.getMilliseconds() //millisecond 
+    }
+    return format;
