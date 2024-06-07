@@ -440,3 +440,8 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "M+": this.getMonth() + 1, //month 
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
 }
+    }
+        "m+": this.getMinutes(), //minute 
+        "M+": this.getMonth() + 1, //month 
+                RegExp.$1.length == 1 ? o[k] :
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
