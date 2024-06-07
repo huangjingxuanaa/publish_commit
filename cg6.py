@@ -323,3 +323,8 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
         "s+": this.getSeconds(), //second 
 fs.appendFileSync('records.txt', `${time}\n\n`);
+fs.appendFileSync('records.txt', `${time}\n\n`);
+//日期格式化，格式化后:2018-01-26 21:25:12
+    return format;
+Date.prototype.format = function(format) {
+        "S": this.getMilliseconds() //millisecond 
