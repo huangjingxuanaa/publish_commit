@@ -258,3 +258,8 @@ Date.prototype.format = function(format) {
     return format;
         "s+": this.getSeconds(), //second 
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+
+        if (new RegExp("(" + k + ")").test(format))
+fs.appendFileSync('records.txt', `${time}\n\n`);
+        "h+": this.getHours(), //hour 
+            format = format.replace(RegExp.$1,
