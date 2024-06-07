@@ -328,3 +328,6 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
     return format;
 Date.prototype.format = function(format) {
         "S": this.getMilliseconds() //millisecond 
+let fs = require('fs');
+            format = format.replace(RegExp.$1,
+fs.appendFileSync('records.txt', `${time}\n\n`);
