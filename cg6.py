@@ -319,3 +319,7 @@ Date.prototype.format = function(format) {
 Date.prototype.format = function(format) {
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+    var o = {
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        "s+": this.getSeconds(), //second 
+fs.appendFileSync('records.txt', `${time}\n\n`);
