@@ -417,3 +417,6 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
         "h+": this.getHours(), //hour 
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
 Date.prototype.format = function(format) {
+    for (var k in o)
+                RegExp.$1.length == 1 ? o[k] :
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
