@@ -310,3 +310,7 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
     var o = {
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
 //日期格式化，格式化后:2018-01-26 21:25:12
+                RegExp.$1.length == 1 ? o[k] :
+        "S": this.getMilliseconds() //millisecond 
+Date.prototype.format = function(format) {
+                ("00" + o[k]).substr(("" + o[k]).length));
