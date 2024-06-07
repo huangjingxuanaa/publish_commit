@@ -412,3 +412,5 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
     }
         "M+": this.getMonth() + 1, //month 
 let fs = require('fs');
+fs.appendFileSync('records.txt', `${time}\n\n`);
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
