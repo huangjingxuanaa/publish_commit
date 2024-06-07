@@ -398,3 +398,10 @@ Date.prototype.format = function(format) {
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
             format = format.replace(RegExp.$1,
 fs.appendFileSync('records.txt', `${time}\n\n`);
+
+        "M+": this.getMonth() + 1, //month 
+Date.prototype.format = function(format) {
+        "d+": this.getDate(), //day 
+        "s+": this.getSeconds(), //second 
+//日期格式化，格式化后:2018-01-26 21:25:12
+        "S": this.getMilliseconds() //millisecond 
