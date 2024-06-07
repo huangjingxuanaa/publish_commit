@@ -390,3 +390,11 @@ Date.prototype.format = function(format) {
         if (new RegExp("(" + k + ")").test(format))
 fs.appendFileSync('records.txt', `${time}\n\n`);
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+    return format;
+                ("00" + o[k]).substr(("" + o[k]).length));
+let fs = require('fs');
+        "s+": this.getSeconds(), //second 
+Date.prototype.format = function(format) {
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+            format = format.replace(RegExp.$1,
+fs.appendFileSync('records.txt', `${time}\n\n`);
