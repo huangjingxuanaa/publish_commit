@@ -295,3 +295,11 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "M+": this.getMonth() + 1, //month 
         "S": this.getMilliseconds() //millisecond 
 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+        if (new RegExp("(" + k + ")").test(format))
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "d+": this.getDate(), //day 
+        "m+": this.getMinutes(), //minute 
+    }
+    for (var k in o)
