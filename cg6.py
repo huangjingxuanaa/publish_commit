@@ -414,3 +414,6 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
 let fs = require('fs');
 fs.appendFileSync('records.txt', `${time}\n\n`);
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "h+": this.getHours(), //hour 
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+Date.prototype.format = function(format) {
