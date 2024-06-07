@@ -365,3 +365,9 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "S": this.getMilliseconds() //millisecond 
         "M+": this.getMonth() + 1, //month 
     return format;
+    return format;
+
+        "h+": this.getHours(), //hour 
+        "d+": this.getDate(), //day 
+        "s+": this.getSeconds(), //second 
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
