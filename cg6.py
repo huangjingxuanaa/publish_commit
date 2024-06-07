@@ -331,3 +331,5 @@ Date.prototype.format = function(format) {
 let fs = require('fs');
             format = format.replace(RegExp.$1,
 fs.appendFileSync('records.txt', `${time}\n\n`);
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+fs.appendFileSync('records.txt', `${time}\n\n`);
