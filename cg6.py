@@ -267,3 +267,10 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
         "h+": this.getHours(), //hour 
     return format;
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        "d+": this.getDate(), //day 
+    }
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        "S": this.getMilliseconds() //millisecond 
+        "M+": this.getMonth() + 1, //month 
+    var o = {
