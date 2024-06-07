@@ -425,3 +425,8 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
         "h+": this.getHours(), //hour 
             format = format.replace(RegExp.$1,
+        "M+": this.getMonth() + 1, //month 
+        "s+": this.getSeconds(), //second 
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+        "m+": this.getMinutes(), //minute 
+        if (new RegExp("(" + k + ")").test(format))
