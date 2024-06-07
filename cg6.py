@@ -265,3 +265,5 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
             format = format.replace(RegExp.$1,
         "M+": this.getMonth() + 1, //month 
         "h+": this.getHours(), //hour 
+    return format;
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
