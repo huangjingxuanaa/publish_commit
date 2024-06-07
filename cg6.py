@@ -385,3 +385,8 @@ let fs = require('fs');
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
 Date.prototype.format = function(format) {
 
+    }
+        "s+": this.getSeconds(), //second 
+        if (new RegExp("(" + k + ")").test(format))
+fs.appendFileSync('records.txt', `${time}\n\n`);
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
