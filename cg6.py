@@ -333,3 +333,9 @@ let fs = require('fs');
 fs.appendFileSync('records.txt', `${time}\n\n`);
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
 fs.appendFileSync('records.txt', `${time}\n\n`);
+        "d+": this.getDate(), //day 
+        if (new RegExp("(" + k + ")").test(format))
+    }
+        "m+": this.getMinutes(), //minute 
+            format = format.replace(RegExp.$1,
+}
