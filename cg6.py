@@ -358,3 +358,10 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
         "d+": this.getDate(), //day 
         "m+": this.getMinutes(), //minute 
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "s+": this.getSeconds(), //second 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "S": this.getMilliseconds() //millisecond 
+        "M+": this.getMonth() + 1, //month 
+    return format;
