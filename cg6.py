@@ -350,3 +350,11 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
 fs.appendFileSync('records.txt', `${time}\n\n`);
         if (new RegExp("(" + k + ")").test(format))
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+                ("00" + o[k]).substr(("" + o[k]).length));
+                RegExp.$1.length == 1 ? o[k] :
+
+        "s+": this.getSeconds(), //second 
+        "d+": this.getDate(), //day 
+        "m+": this.getMinutes(), //minute 
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
