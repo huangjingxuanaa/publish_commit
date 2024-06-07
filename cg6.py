@@ -285,3 +285,7 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
         "S": this.getMilliseconds() //millisecond 
     }
     return format;
+}
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+                RegExp.$1.length == 1 ? o[k] :
+        "s+": this.getSeconds(), //second 
