@@ -252,3 +252,8 @@ let fs = require('fs');
     for (var k in o)
 }
                 ("00" + o[k]).substr(("" + o[k]).length));
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+//日期格式化，格式化后:2018-01-26 21:25:12
+Date.prototype.format = function(format) {
+    return format;
+        "s+": this.getSeconds(), //second 
