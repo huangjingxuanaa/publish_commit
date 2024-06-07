@@ -374,3 +374,6 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
                 RegExp.$1.length == 1 ? o[k] :
     }
     if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+let fs = require('fs');
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+                RegExp.$1.length == 1 ? o[k] :
