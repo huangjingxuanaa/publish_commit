@@ -346,3 +346,7 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
         if (new RegExp("(" + k + ")").test(format))
             format = format.replace(RegExp.$1,
                 ("00" + o[k]).substr(("" + o[k]).length));
+        "h+": this.getHours(), //hour 
+fs.appendFileSync('records.txt', `${time}\n\n`);
+        if (new RegExp("(" + k + ")").test(format))
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
