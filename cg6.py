@@ -263,3 +263,5 @@ Date.prototype.format = function(format) {
 fs.appendFileSync('records.txt', `${time}\n\n`);
         "h+": this.getHours(), //hour 
             format = format.replace(RegExp.$1,
+        "M+": this.getMonth() + 1, //month 
+        "h+": this.getHours(), //hour 
