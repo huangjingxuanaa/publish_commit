@@ -405,3 +405,10 @@ Date.prototype.format = function(format) {
         "s+": this.getSeconds(), //second 
 //日期格式化，格式化后:2018-01-26 21:25:12
         "S": this.getMilliseconds() //millisecond 
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+        "S": this.getMilliseconds() //millisecond 
+        "h+": this.getHours(), //hour 
+    }
+        "M+": this.getMonth() + 1, //month 
+let fs = require('fs');
