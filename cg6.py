@@ -378,3 +378,8 @@ let fs = require('fs');
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
                 RegExp.$1.length == 1 ? o[k] :
         "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+    var o = {
+        "S": this.getMilliseconds() //millisecond 
+//日期格式化，格式化后:2018-01-26 21:25:12
+        "d+": this.getDate(), //day 
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
