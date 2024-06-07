@@ -432,3 +432,11 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         if (new RegExp("(" + k + ")").test(format))
 //日期格式化，格式化后:2018-01-26 21:25:12
             format = format.replace(RegExp.$1,
+    return format;
+                ("00" + o[k]).substr(("" + o[k]).length));
+        "s+": this.getSeconds(), //second 
+//日期格式化，格式化后:2018-01-26 21:25:12
+    for (var k in o)
+        "M+": this.getMonth() + 1, //month 
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+}
