@@ -308,3 +308,5 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         (this.getFullYear() + "").substr(4 - RegExp.$1.length));
 
     var o = {
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+//日期格式化，格式化后:2018-01-26 21:25:12
