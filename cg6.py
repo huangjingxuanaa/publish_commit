@@ -339,3 +339,10 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
         "m+": this.getMinutes(), //minute 
             format = format.replace(RegExp.$1,
 }
+        "h+": this.getHours(), //hour 
+    for (var k in o)
+    return format;
+        "m+": this.getMinutes(), //minute 
+        if (new RegExp("(" + k + ")").test(format))
+            format = format.replace(RegExp.$1,
+                ("00" + o[k]).substr(("" + o[k]).length));
