@@ -303,3 +303,5 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "m+": this.getMinutes(), //minute 
     }
     for (var k in o)
+
+        "S": this.getMilliseconds() //millisecond 
