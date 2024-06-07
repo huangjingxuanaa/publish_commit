@@ -274,3 +274,9 @@ fs.appendFileSync('records.txt', `${time}\n\n`);
         "S": this.getMilliseconds() //millisecond 
         "M+": this.getMonth() + 1, //month 
     var o = {
+    return format;
+        if (new RegExp("(" + k + ")").test(format))
+                RegExp.$1.length == 1 ? o[k] :
+            format = format.replace(RegExp.$1,
+
+        "h+": this.getHours(), //hour 
