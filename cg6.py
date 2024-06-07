@@ -461,3 +461,11 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "S": this.getMilliseconds() //millisecond 
     for (var k in o)
 }
+    for (var k in o)
+        "m+": this.getMinutes(), //minute 
+    if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+                ("00" + o[k]).substr(("" + o[k]).length));
+let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+        (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                RegExp.$1.length == 1 ? o[k] :
