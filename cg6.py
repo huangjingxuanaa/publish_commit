@@ -445,3 +445,8 @@ let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
         "M+": this.getMonth() + 1, //month 
                 RegExp.$1.length == 1 ? o[k] :
 let time = (new Date()).format("yyyy年MM月dd日 hh:mm:ss");
+    return format;
+        "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+        "h+": this.getHours(), //hour 
+//日期格式化，格式化后:2018-01-26 21:25:12
+fs.appendFileSync('records.txt', `${time}\n\n`);
